@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonido Vivo - Catálogo de Instrumentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado y barra de navegación -->
+  <header>
+    <div class="header-contenido">
+      <div>  
+        <h1>Sonido Vivo</h1>
+        <p>Instrumentos y Equipos Musicales • Viña del Mar</p>
+      </div>
+
+      <div class="menu-derecha">
+        <nav>
+          <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          </ul>
+        </nav>
+      
+
+        <div class="carrito-resumen">
+          <button id="btn-ver-carrito" type="button">🛒 Carrito (<span id="contador-carrito">0</span>)</button>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    
+    <!-- Filtros de categoría -->
+    <section class="filtros-seccion">
+      <h2>Explorar Catálogo</h2>
+      <div class="botones-filtros">
+        <button class="btn-filtro activo" data-categoria="todos">Todos</button>
+        <button class="btn-filtro" data-categoria="Guitarras">Guitarras y Bajos</button>
+        <button class="btn-filtro" data-categoria="Baterias">Baterías y Percusión</button>
+        <button class="btn-filtro" data-categoria="Teclados">Teclados y Pianos</button>
+        <button class="btn-filtro" data-categoria="Audio">Audio y Micrófonos</button>
+      </div>
+    </section>
+
+    <!-- Contenedor dinámico de productos -->
+    <section class="catalogo-seccion">
+      <div id="contenedor-productos" class="contenedor-tarjetas">
+        <!-- JS renderizará aquí los <article class="producto"> -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal / Ventana del Carrito de Compras -->
+  <aside id="modal-carrito" class="modal oculto">
+    <div class="modal-contenido">
+      <h3>Tu Carrito de Compras</h3>
+      <div id="lista-carrito"></div>
+      <p class="total-pedido">Total: <strong id="precio-total">$0</strong></p>
+      
+      <div class="acciones-carrito">
+        <button id="btn-cerrar-carrito" type="button">Seguir Comprando</button>
+        <button id="btn-confirmar-pedido" type="button" class="btn-primario">Confirmar Pedido</button>
+      </div>
+      <p id="mensaje-pedido"></p>
+    </div>
+  </aside>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 Sonido Vivo - Viña del Mar. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
