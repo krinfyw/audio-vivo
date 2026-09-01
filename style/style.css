@@ -17,6 +17,11 @@ header {
   padding: 10px 20px;
 }
 
+.icono-carrito{
+  width: 24px;
+  height: 24px;
+}
+
 .header-contenido {
   max-width: 1600px;
   margin: 0 auto;
