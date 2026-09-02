@@ -1,0 +1,76 @@
+.categorias-div{
+    position: relative;
+}
+
+.flecha-categorias{
+    position: absolute;
+    top: 50%;
+    z-index: 10;  
+    border-radius: 4px;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.flecha-categorias#btn-izq{
+    left: 0;
+
+}
+
+.flecha-categorias#btn-der{
+    right: 0;
+}
+
+.categorias {
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    scroll-behavior: smooth; /* Suaviza el desplazamiento */
+}
+
+.categoria-item {
+    flex: 0 0 75%;
+    max-width: 250px;
+    height: 100%;
+    border-radius: 12px;
+
+    overflow: hidden;  /* Evita que la imagen se desborde del contenedor */
+    position: relative; /* Para posicionar el texto sobre la imagen */
+
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+.categoria-link {
+    display: block; /* Hace que el enlace ocupe todo el contenedor */
+    width: 100%;
+    height: 100%;
+}
+
+.categoria-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la imagen se deforme */
+    transition: transform 0.3s ease;
+}
+
+/* :hover sirve para aplicar efectos a elementos cuando se pasa el mouse por encima*/
+.categoria-link:hover img {
+    transform: scale(1.05); /* Efecto zoom al pasar el mouse */
+}
+
+.categoria-link span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
