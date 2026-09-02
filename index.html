@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonido Vivo - Catálogo de Instrumentos</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/carrusel.css">
+  <script src="js/carrusel.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-contenido">
+      <div>
+        <!--Se reemplazan IDs por clases (.marca-titulo, .marca-lema) para reducir especificidad -->
+        <h1 class="marca-titulo">Sonido Vivo</h1>
+        <p class="marca-lema">Instrumentos y Equipos Musicales • Viña del Mar</p>
+      </div>
+      <!--Se agrupan accesos directos en nav/ul y se corrige anidamiento de etiquetas -->
+      <div class="menu-derecha">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <img class="icono-carrito" src="img/shopping-cart.png" alt="Carrito de compras">
+              </a>
+            </li>
+            <li><a href="Arquitectura.html">Catálogo</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="titulo-categorias">
+        <h2>Explorar Catálogo</h2>
+      </div>
+      <div class="categorias-div">
+        <button id="btn-izq" class="flecha-categorias flecha-izq">&lt;</button>
+
+        <ul class="categorias" id="categorias">
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="guitarras-acusticas.html" class="categoria-link">
+                <img src="img/guitarraAcustica.jpg" alt="Guitarras Acústicas">
+                <span>Guitarras Acusticas</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="guitarras-electricas.html" class="categoria-link">
+                <img src="img/guitarraElectrica.jpg" alt="Guitarras electricas">
+                <span>Guitarras Electricas</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="bajos-electricos.html" class="categoria-link">
+                <img src="img/bajo-electrico.webp" alt="bajo electrico">
+                <span>bajos electricos</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="teclados-pianos.html" class="categoria-link">
+                <img src="img/teclado.jpg" alt="Teclados">
+                <span>Teclados y pianos</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="percusion.html" class="categoria-link">
+                <img src="img/bateria.jpg" alt="Percusión">
+                <span>Percusión</span>
+              </a>
+            </article>
+          </li>
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="amplificadores.html" class="categoria-link">
+                <img src="img/amplificadores.jpg" alt="Amplificadores">
+                <span>Amplificadores</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="microfonos.html" class="categoria-link">
+                <img src="img/microfonos.jpeg" alt="Micrófonos">
+                <span>Micrófonos</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="pedales-efectos.html" class="categoria-link">
+                <img src="img/pedal-efecto.jpg" alt="Pedales de efectos">
+                <span>Pedales de efectos</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="accesorios.html" class="categoria-link">
+                <img src="img/puas.webp" alt="puas de guitarra">
+                <span>Accesorios</span>
+              </a>
+            </article>
+          </li>
+
+          <li class="categoria-item">
+            <article class="article-carrusel">
+              <a href="estudio-grabacion.html" class="categoria-link">
+                <img src="img/audifonos-estudio.jpg" alt="Estudio y grabación">
+                <span>Estudio y grabación</span>
+              </a>
+            </article>
+          </li>
+
+        </ul>
+        <button id="btn-der" class="flecha-categorias flecha-der">&gt;</button>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <!-- aqui se coloca los instrumentos -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Sonido Vivo - Viña del Mar. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>
