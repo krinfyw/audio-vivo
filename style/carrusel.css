@@ -11,13 +11,13 @@
     cursor: pointer;
 }
 
-.flecha-categorias#btn-izq{
-    left: 0;
+.flecha-izq{
+    left: 0.5px;
 
 }
 
-.flecha-categorias#btn-der{
-    right: 0;
+.flecha-der{
+    right: 0.5px;
 }
 
 .categorias {
