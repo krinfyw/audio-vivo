@@ -14,16 +14,21 @@
   <header>
     <div class="header-contenido">
       <div>
-        <h1>Sonido Vivo</h1>
-        <p>Instrumentos y Equipos Musicales • Viña del Mar</p>
+        <!--Se reemplazan IDs por clases (.marca-titulo, .marca-lema) para reducir especificidad -->
+        <h1 class="marca-titulo">Sonido Vivo</h1>
+        <p class="marca-lema">Instrumentos y Equipos Musicales • Viña del Mar</p>
       </div>
-
+      <!--Se agrupan accesos directos en nav/ul y se corrige anidamiento de etiquetas -->
       <div class="menu-derecha">
         <nav>
           <ul>
-            <img class="icono-carrito" src="img/shopping-cart.png">
-            <li>Catálogo</li>
-            <li>Cerrar Sesión</li>
+            <li>
+              <a href="#">
+                <img class="icono-carrito" src="img/shopping-cart.png" alt="Carrito de compras">
+              </a>
+            </li>
+            <li><a href="Arquitectura.html">Catálogo</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
           </ul>
         </nav>
       </div>
@@ -37,7 +42,7 @@
         <h2>Explorar Catálogo</h2>
       </div>
       <div class="categorias-div">
-        <button id="btn-izq" class="flecha-categorias">&lt;</button>
+        <button id="btn-izq" class="flecha-categorias flecha-izq">&lt;</button>
 
         <ul class="categorias" id="categorias">
           <li class="categoria-item">
@@ -130,7 +135,7 @@
           </li>
 
         </ul>
-        <button id="btn-der" class="flecha-categorias">&gt;</button>
+        <button id="btn-der" class="flecha-categorias flecha-der">&gt;</button>
       </div>
     </section>
 

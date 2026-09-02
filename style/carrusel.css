@@ -1,29 +1,50 @@
+/* Margenes internos para alojar botones sin obstruir las tarjetas*/
 .categorias-div{
     position: relative;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
+/*Botones circulares centrados con box-shadow para profundidad*/
 .flecha-categorias{
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 10;  
-    border-radius: 4px;
-    background-color: pink;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.flecha-categorias#btn-izq{
-    left: 0;
+/*Escala y resalte sueve al pasar el cursor*/
+.flecha-categorias:hover{
+    background-color: #f5f5f5;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.flecha-izq{
+    left: 8px;
 
 }
 
-.flecha-categorias#btn-der{
-    right: 0;
+.flecha-der{
+    right: 8px;
 }
 
 .categorias {
     width: 100%;
     height: 320px;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     gap: 20px;
     list-style: none;
@@ -36,12 +57,12 @@
     max-width: 250px;
     height: 100%;
     border-radius: 12px;
-
     overflow: hidden;  /* Evita que la imagen se desborde del contenedor */
     position: relative; /* Para posicionar el texto sobre la imagen */
-
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.02s ease, box-shadow 0.2s ease;
 }
 
 .article-carrusel{
