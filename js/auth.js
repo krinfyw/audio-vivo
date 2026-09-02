@@ -45,7 +45,7 @@ formulario.addEventListener("submit", function (e) {
     mensajeConfirmacion.style.color = "#2e7d32";
 
     setTimeout(function () {
-      window.location.href = "Arquitectura.html";
+      window.location.href = "index.html";
     }, 1000);
   } else {
     // Mensaje de error según el caso
