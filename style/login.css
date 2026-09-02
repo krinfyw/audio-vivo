@@ -1,0 +1,99 @@
+/* Estilos para la página de inicio de sesión */
+body.pagina-login {
+  display: flex;
+  flex-direction: column;
+  
+}
+/* Contenedor principal de la página de inicio de sesión */
+.pagina-login .login-pantalla {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Tarjeta de inicio de sesión */
+.login-tarjeta {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 35px 30px;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Título de la tarjeta */
+.titulo-login {
+  text-align: center;
+  margin-bottom: 25px;
+}
+/* Estilo del título */
+.titulo-login h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a252f;
+}
+/* Línea decorativa debajo del título */
+.titulo-login h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #d27300; 
+  border-radius: 2px;
+}
+/*estilo de los campos de error de login*/
+.campo-error {
+  border: 2px solid #a3242f !important;
+  background-color: #fbe9ea !important;
+}
+
+/* Formulario de inicio de sesión */
+#form-login label {
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  
+}
+
+#form-login input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Botón de envío */
+#form-login button[type="submit"] {
+  width: 100%;
+  background-color: #d27300;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 22px;
+ 
+}
+
+#form-login button[type="submit"]:hover {
+  background-color: #b86200;
+}
+
+/* Mensajes de validación */
+#mensaje-login {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}

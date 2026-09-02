@@ -24,3 +24,4 @@ flechaIzquierda.addEventListener('click', () => {
         categorias.scrollBy({ left: -desplazamiento, behavior: 'smooth' });
     }
 });
+

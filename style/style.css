@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+html{
+  height: 100%;  
+}
 /* Se cambiar color a gris oscuro para asegurar contraste y legibilidad*/
 body {
   font-family: Arial, sans-serif;
@@ -73,6 +75,7 @@ nav a:hover {
 
 
 main {
+  flex: 1;
   max-width: 1200px;
   margin: 30px auto;
   padding: 0 20px;
