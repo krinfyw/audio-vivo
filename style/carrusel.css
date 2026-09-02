@@ -44,6 +44,11 @@
     font-size: 1rem;
 }
 
+.article-carrusel{
+    width: 100%;
+    height: 100%;
+}
+
 .categoria-link {
     display: block; /* Hace que el enlace ocupe todo el contenedor */
     width: 100%;
