@@ -1,44 +1,43 @@
 /* Margenes internos para alojar botones sin obstruir las tarjetas*/
 .categorias-div{
-    position: relative;
+    position: relative; /* Permite posicionar las flechas de navegación de manera absoluta dentro del contenedor */
     padding: 0 50px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total del contenedor */
 }
 
 /*Botones circulares centrados con box-shadow para profundidad*/
 .flecha-categorias{
-    position: absolute;
-    top: 45%;
-    z-index: 10;  
+    position: absolute; /* Posiciona las flechas de navegación de manera absoluta dentro del contenedor */
+    top: 45%; /* Centra verticalmente las flechas de navegación */
+    z-index: 10;  /* Asegura que las flechas de navegación estén por encima de otros elementos */
     width: 40px;
-    height: 40px;
+    height: 40px; /* Tamaño de las flechas de navegación */
     border-radius: 50%;
-    border: none;
+    border: none; /* Elimina el borde predeterminado del botón */
     background-color: #ffffff;
     color: #333333;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    display: flex;
+    font-size: 1.1rem; /* Tamaño de fuente para el icono de la flecha */
+    font-weight: bold; /* Fuente en negrita para el icono de la flecha */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre las flechas de navegación */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para dar sensación de profundidad */
+    display: flex; /* Permite centrar el contenido del botón */
     align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    justify-content: center; /* Centra el contenido del botón */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Transición suave para el cambio de color de fondo y el efecto de desplazamiento al pasar el mouse */
 }
 
 /*Escala y resalte sueve al pasar el cursor*/
 .flecha-categorias:hover{
     background-color: #f5f5f5;
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.1); /* Efecto de desplazamiento y escala al pasar el mouse */
 }
 
 .flecha-izq{
-    left: 8px;
-
+    left: 8px; /* Posiciona la flecha izquierda a 8px del borde izquierdo del contenedor */
 }
 
 .flecha-der{
-    right: 8px;
+    right: 8px; /* Posiciona la flecha derecha a 8px del borde derecho del contenedor */
 }
 
 .categorias {
@@ -47,7 +46,7 @@
     padding: 20px 0;
     display: flex;
     gap: 20px;
-    list-style: none;
+    list-style: none; /* Elimina los puntos de la lista */
     overflow-x: hidden; /* Oculta el desbordamiento horizontal */
     scroll-behavior: smooth; /* Suaviza el desplazamiento */
 }
@@ -62,13 +61,15 @@
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.02s ease, box-shadow 0.2s ease;
+    transition: transform 0.02s ease, box-shadow 0.2s ease; /* Transición suave para el efecto de desplazamiento y sombra al pasar el mouse */
 }
+
 
 .article-carrusel{
     width: 100%;
-    height: 100%;
+    height: 100%; /* Asegura que el artículo ocupe todo el contenedor del carrusel */
 }
+
 
 .categoria-link {
     display: block; /* Hace que el enlace ocupe todo el contenedor */
@@ -89,12 +90,12 @@
 }
 
 .categoria-link span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: absolute; /* Posiciona el texto de manera absoluta dentro del contenedor */
+    bottom: 0; /* Posiciona el texto en la parte inferior de la tarjeta */
+    left: 0; /* Alinea el texto a la izquierda */
     width: 100%;
     padding: 15px 10px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); /* Degradado para mejorar la legibilidad del texto sobre la imagen */
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
