@@ -1,15 +1,15 @@
 /* Estilos para la página de inicio de sesión */
 body.pagina-login {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Organiza los elementos en una columna */
   
 }
 /* Contenedor principal de la página de inicio de sesión */
 .pagina-login .login-pantalla {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centra horizontalmente la tarjeta de inicio de sesión */
+  align-items: center; /* Centra verticalmente la tarjeta de inicio de sesión */
   padding: 40px 20px;
 }
 
@@ -20,32 +20,30 @@ body.pagina-login {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 35px 30px;
   width: 100%;
-  max-width: 420px;
+  max-width: 420px; /* Ancho máximo de la tarjeta para pantallas grandes */
 }
 
 /* Título de la tarjeta */
 .titulo-login {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 25px; /* Espacio inferior para separar del formulario */
 }
 /* Estilo del título */
 .titulo-login h2 {
-  position: relative;
-  display: inline-block;
+  position: relative; /* Permite posicionar la línea decorativa debajo del título */
   padding-bottom: 10px;
   font-size: 1.8rem;
-  font-weight: 700;
   color: #1a252f;
 }
 /* Línea decorativa debajo del título */
 .titulo-login h2::after {
-  content: "";
-  position: absolute;
+  content: ""; /* Crea un pseudo-elemento para la línea decorativa */
+  position: absolute; /* saca a un elemento del flujo normal del documento y permite colocarlo en una posición exacta mediante coordenadas */
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50%; /* Posiciona la línea en el centro horizontal del título */
+  transform: translateX(-50%); /* Centra la línea debajo del título */
   width: 50px;
-  height: 3px;
+  height: 3px; /* Grosor de la línea naranja de abajo del título */
   background-color: #d27300; 
   border-radius: 2px;
 }
@@ -56,8 +54,7 @@ body.pagina-login {
 }
 
 /* Formulario de inicio de sesión */
-#form-login label {
-  display: block;
+.login-pantalla label {
   font-weight: bold;
   color: #333333;
   margin-top: 14px;
@@ -65,7 +62,7 @@ body.pagina-login {
   
 }
 
-#form-login input {
+.login-pantalla input {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #ced4da;
@@ -74,26 +71,22 @@ body.pagina-login {
 }
 
 /* Botón de envío */
-#form-login button[type="submit"] {
-  width: 100%;
+.btn-login {
+  width: 100%;/* El botón ocupa todo el ancho del contenedor */
   background-color: #d27300;
   color: #ffffff;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: bold; /* Fuente en negrita para el texto del botón */
+  font-size: 1rem; /* Tamaño de fuente del botón */
   padding: 12px;
-  border: none;
-  border-radius: 6px;
-  margin-top: 22px;
+  border: none; /* Elimina el borde predeterminado del botón */
+  border-radius: 6px; /* Bordes redondeados */
+  margin-top: 22px;/* Espacio superior para separar del último campo */
  
 }
 
-#form-login button[type="submit"]:hover {
-  background-color: #b86200;
-}
-
 /* Mensajes de validación */
-#mensaje-login {
-  margin-top: 15px;
-  font-weight: bold;
+.mensaje-login {
+  margin-top: 15px;/* Espacio superior para separar del botón */
+  font-weight: bold; /*Agranda la fuente de letra  */
   text-align: center;
 }

@@ -9,7 +9,7 @@ html{
 }
 /* Se cambiar color a gris oscuro para asegurar contraste y legibilidad*/
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Fuente de Letra */
   background-color: #f4f6f8;
   color: #333333;
 }
@@ -22,45 +22,45 @@ header {
 
 .icono-carrito{
   width: 24px;
-  height: 24px;
+  height: 24px; /* Tamaño del icono del carrito */
 }
 
 .header-contenido {
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;   
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no caben en una sola fila */
+  justify-content: space-between;    /* Distribuye el espacio entre los elementos del header */
   align-items: center;
   gap: 15px;
 }
 
 /*Selectores de clases para facilitar el mantenimiento*/
 .marca-titulo {
-  font-size: 1.8rem;
-  margin: 0;
+  font-size: 1.8rem; /* Tamaño de fuente para el título de la marca */
+  margin: 0; /* Elimina el margen predeterminado del elemento h1 */
 }
 
 .marca-lema {
   font-size: 0.9rem;
   color: #ffe0b2;  
-  margin: 0;
+  margin: 0; /* Elimina el margen predeterminado del elemento h2 */
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex; /* Muestra los elementos de la lista en línea */
   gap: 15px;
 }
 
 nav a {
   color: #ecf0f1;
-  text-decoration: none;
-  font-weight: 500;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-weight: 500; /* Fuente en negrita para mejorar la legibilidad */
   font-size: 0.95rem;
   padding: 6px 14px;
   border-radius: 20px;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease; /* Transición suave para el cambio de color de fondo y texto al pasar el mouse */
 }
 
 nav a:hover {
@@ -88,21 +88,22 @@ main {
 
 /* Barra bajo el titulo de sección*/
 .titulo-categorias h2 {
-  position: relative;
-  display: inline-block;
+  position: relative; /* Permite posicionar la línea decorativa debajo del título */
+  display: inline-block; /* Permite que el pseudo-elemento ::after se posicione correctamente debajo del título */
   padding-bottom: 10px;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 700; /* Fuente en negrita para el título de la sección */
 }
 
+/* Estilo de la línea decorativa debajo del título de la sección */
 .titulo-categorias h2::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  content: ""; /* Crea un pseudo-elemento para la línea decorativa */
+  position: absolute; /* saca a un elemento del flujo normal del documento y permite colocarlo en una posición exacta mediante coordenadas */
+  bottom: 0; /* Posiciona la línea decorativa en la parte inferior del título */
+  left: 50%; /* Centra la línea decorativa horizontalmente debajo del título */
+  transform: translateX(-50%); /* Ajusta la posición de la línea decorativa para que esté centrada debajo del título */
   width: 50px;
-  height: 3px;
+  height: 3px; /* Grosor de la línea decorativa */
   background-color: #d27300;
   border-radius: 2px;
 }
@@ -113,28 +114,27 @@ main {
 }
 
 .botones-filtros {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Contenedor de botones de filtro */
+  flex-wrap: wrap; /* Permite que los botones se ajusten a la siguiente línea si no caben en una sola fila */
   justify-content: center;
-  gap: 10px;
+  gap: 10px; /* Espacio entre los botones de filtro */
 }
-
+/* Estilo de los botones de filtro */
 .btn-filtro {
   background-color: #ffffff;
   border: 1px solid #d27300;   
-  padding: 8px 16px;
+  padding: 8px 16px; /* Ajuste de padding para mejorar la accesibilidad y el tamaño del área clicable */
   border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #d27300;
-  transition: all 0.2s ease;   
+  cursor: pointer; /* Cambiado de pointer a cursor para mejorar la accesibilidad */
+  font-weight: bold; /* Fuente en negrita para el texto del botón */
+  color: #d27300; 
 }
-
+/* Efecto hover para los botones de filtro */
 .btn-filtro:hover{
   background-color: #d27300;
   color: #ffffff;
-  transform: translate(-2px);
-  box-shadow: 0 4px 10px rgba(210, 115, 0, 0.25);
+  transform: translate(-2px); /* Efecto de desplazamiento al pasar el mouse */ 
+  box-shadow: 0 4px 10px rgba(210, 115, 0, 0.25); /* Sombra para dar sensación de profundidad */
 }
 
 footer {
@@ -142,15 +142,107 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 16px;
-  margin-top: 40px;
+  margin-top: 40px; /* Espacio superior para separar del contenido principal */
 }
 
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .producto {
     width: 100%;
   }
   .header-contenido {
-    flex-direction: column;
+    flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
     text-align: center;
   }
+}
+
+/*-----------------------------------------------------------------*/
+/*------------------------CSS DE INSTRUMENTOS*---------------------*/
+/*----------------------------------------------------------------*/
+
+.instrumentos-lista {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.instrumentos-item {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.article-instrumentos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-producto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-producto {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-producto h3 {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d27300;
+}
+
+.stock {
+    font-size: 0.9rem;
+    color: #27ae60;
+}
+
+.btn-comprar {
+    background-color: #d27300;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.btn-comprar:hover {
+    background-color: #b56300;
+}
+
+.header-contenido {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: #d27300;
+    color: #ffffff;
+    padding: 10px 20px;
 }
