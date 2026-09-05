@@ -156,6 +156,20 @@ footer {
   }
 }
 
+
+.footer {
+  background-color: #d27300;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  margin-top: 40px;
+}
+
+.footer-texto {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
 /*-----------------------------------------------------------------*/
 /*------------------------CSS DE INSTRUMENTOS*---------------------*/
 /*----------------------------------------------------------------*/
