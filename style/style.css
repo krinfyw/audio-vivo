@@ -86,6 +86,51 @@ main {
   text-align: center;
 }
 
+.seccion-video {
+  text-align: center;
+}
+
+header{
+  position: relative;
+}
+
+#carrito-total{
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 280px;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  border: 2px solid #d27300;
+  padding: 10px;
+  color: black;
+  z-index: 10;
+}
+
+#lista-carrito li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+#lista-carrito img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+#lista-carrito{
+  list-style: none;
+  padding: 0;
+}
+
+.ocultar-carrito {
+  display: none;
+}
+
 /* Barra bajo el titulo de sección*/
 .titulo-categorias h2 {
   position: relative; /* Permite posicionar la línea decorativa debajo del título */

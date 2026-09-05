@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/carrusel.css">
   <script src="js/carrusel.js" defer></script>
+  <script src="js/carrito.js" defer></script>
 </head>
 
 <body>
@@ -24,17 +25,36 @@
         <nav>
           <ul>
             <li>
-              <a href="#"><img class="icono-carrito" src="img/shopping-cart.png" alt="Carrito de compras"></a>
-              <a href="login.html" id="btn-auth">Iniciar Sesión</a>
+              <a href="#" id="abrir-carrito">
+                <img class="icono-carrito" src="img/shopping-cart.png" alt="Carrito de compras">
+                <span id="contador-carrito">0</span>
+              </a>
             </li>
+            <li><a href="index.html">Catálogo</a></li>
+            <li><a href="login.html" id="btn-auth">Iniciar Sesión</a></li>
           </ul>
         </nav>
       </div>
     </div>
+    <div id="carrito-total" class="ocultar-carrito">
+      <ul id="lista-carrito"></ul>
+      <p id="total-carrito"></p>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+    </div>
   </header>
 
   <main>
-
+    <section class="seccion-video">
+      <h2 class="titulo-categorias">Nuestros Instrumentos</h2>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/tRv9VuFd4L8" 
+        title="Nuestros instrumentos" 
+        frameborder="0" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </section>
     <section>
       <div class="titulo-categorias">
         <h2>Explorar Catálogo</h2>
@@ -89,7 +109,7 @@
           </li>
           <li class="categoria-item">
             <article class="article-carrusel">
-              <a href="amplificadores.html" class="categoria-link">
+              <a href="index.html" class="categoria-link">
                 <img src="img/amplificadores.jpg" alt="Amplificadores">
                 <span>Amplificadores</span>
               </a>
@@ -98,7 +118,7 @@
 
           <li class="categoria-item">
             <article class="article-carrusel">
-              <a href="microfonos.html" class="categoria-link">
+              <a href="index.html" class="categoria-link">
                 <img src="img/microfonos.jpeg" alt="Micrófonos">
                 <span>Micrófonos</span>
               </a>
@@ -107,7 +127,7 @@
 
           <li class="categoria-item">
             <article class="article-carrusel">
-              <a href="pedales-efectos.html" class="categoria-link">
+              <a href="index.html" class="categoria-link">
                 <img src="img/pedal-efecto.jpg" alt="Pedales de efectos">
                 <span>Pedales de efectos</span>
               </a>
@@ -116,7 +136,7 @@
 
           <li class="categoria-item">
             <article class="article-carrusel">
-              <a href="accesorios.html" class="categoria-link">
+              <a href="index.html" class="categoria-link">
                 <img src="img/puas.webp" alt="puas de guitarra">
                 <span>Accesorios</span>
               </a>
@@ -125,7 +145,7 @@
 
           <li class="categoria-item">
             <article class="article-carrusel">
-              <a href="estudio-grabacion.html" class="categoria-link">
+              <a href="index.html" class="categoria-link">
                 <img src="img/audifonos-estudio.jpg" alt="Estudio y grabación">
                 <span>Estudio y grabación</span>
               </a>

@@ -7,6 +7,7 @@
     <title>Teclados y Pianos - Sonido Vivo</title>
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="style/style.css">
+    <script src="js/carrito.js" defer></script>
 </head>
 
 <body class="body-percusion">
@@ -14,10 +15,21 @@
         <h1>Teclados y Pianos</h1>
         <nav>
             <ul class="menu-derecha ul">
+                <li>
+                    <a href="#" id="abrir-carrito">
+                        <img class="icono-carrito" src="img/shopping-cart.png" alt="Carrito de compras">
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
                 <li><a href="index.html" class="link-nav">Volver al inicio</a></li>
                 <li><a href="index.html" class="link-nav">Cerrar Sesión</a></li>
             </ul>
         </nav>
+        <div id="carrito-total" class="ocultar-carrito">
+            <ul id="lista-carrito"></ul>
+            <p id="total-carrito"></p>
+            <button id="vaciar-carrito">Vaciar carrito</button>
+        </div>
     </header>
 
     <main>
