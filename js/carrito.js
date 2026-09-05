@@ -10,23 +10,19 @@ function mostrarCarrito(){
     let total = 0;
     listaCarrito.forEach(function(Producto){
         const item = document.createElement("li");
-        const img = document.createElement("img");
-        img.src = Producto.imagen || "";
         const texto = document.createElement("span");
         texto.textContent = Producto.nombre + " - " + Producto.precio;
         const btnQuitar = document.createElement("button");
-        btnQuitar.textContent = "x";
         btnQuitar.addEventListener("click", function(){
             listaCarrito.splice(index, 1);
             localStorage.setItem("carrito", JSON.stringify(listaCarrito));
             contador.textContent = listaCarrito.length;
             mostrarCarrito();
         });
-        item.appendChild(img);
         item.appendChild(texto);
         item.appendChild(btnQuitar);
         listaCarritoUL.appendChild(item);
-        const precioNumero = Number(Producto.precio.replace("$", "").replace(".", ""));
+        const precioNumero = Number(Producto.precio.replace("$", "").replaceAll(".", ""));
         total = total + precioNumero;
     });
     document.querySelector("#total-carrito").textContent = "total: $" + total;
@@ -53,7 +49,6 @@ botonesCarrito.forEach(function(boton){
     boton.addEventListener("click", function(e){
         const nombreProducto = boton.parentElement.querySelector("h3").textContent;
         const precioProducto = boton.parentElement.querySelector(".precio").textContent;
-        const imagenProducto = boton.closest("article").querySelector(".img-producto").src;
         listaCarrito.push({nombre: nombreProducto, precio: precioProducto});
         localStorage.setItem("carrito", JSON.stringify(listaCarrito));
         contador.textContent = listaCarrito.length;
